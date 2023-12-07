@@ -81,7 +81,7 @@ export function part1(input: string): number {
   // reduce through to find the sum of all total winnings
   return hands.reduce( ( sum, hand, i ) => {
     // slice hand from index 6, convert to a number
-    // multiply by i + 1, add to sum
+    // multiply by i + 1, add to sum 
     return sum += ( parseInt(hand.slice(6)) * (i+1) );
   }, 0 )
 }
